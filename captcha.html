@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Controllo anti-robot</title>
+<style>html,body{margin:0;padding:0;background:transparent;overflow:hidden}#w{display:flex;justify-content:center}</style>
+<script>
+const k=new URLSearchParams(location.search).get('k')||'';
+const send=m=>{try{parent.postMessage(m,'*')}catch(e){}};send({ready:1});
+function go(){turnstile.render('#w',{sitekey:k,language:'it',theme:'auto',size:'flexible','refresh-expired':'auto',
+ callback:t=>send({ts:t}),'expired-callback':()=>send({ts:''}),'error-callback':c=>{send({ts:'',tsErr:String(c)});return true}})}
+</script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=go&render=explicit" async defer></script>
+</head><body><div id="w"></div></body></html>

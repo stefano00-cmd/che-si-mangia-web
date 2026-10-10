@@ -9,3 +9,6 @@
 ## Sull'iPhone
 Apri l'indirizzo in Safari → Condividi → **Aggiungi a Home**. Si apre a schermo intero come un'app.
 Crea l'account dalla schermata iniziale: i dati restano sincronizzati anche se la web app viene reinstallata.
+
+## Controllo anti-robot
+Il file `captcha.html` serve anche all'app Android: lascialo sempre in questo repository.
