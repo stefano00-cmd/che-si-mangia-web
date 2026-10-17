@@ -12,3 +12,9 @@ Crea l'account dalla schermata iniziale: i dati restano sincronizzati anche se l
 
 ## Controllo anti-robot
 Il file `captcha.html` serve anche all'app Android: lascialo sempre in questo repository.
+
+## Pagine legali (Google Play)
+- privacy.html – informativa privacy
+- termini.html – termini d'uso e avvertenze (dieta equilibrata, pediatra, allergie, IA)
+- elimina-account.html – come eliminare account e dati
+Indirizzi: https://stefano00-cmd.github.io/che-si-mangia-web/privacy.html (e così via).
